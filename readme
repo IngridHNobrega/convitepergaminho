@@ -1,0 +1,62 @@
+Convite de Aniversário One Page
+
+Descrição
+
+Este projeto é um convite de aniversário digital desenvolvido para ser compartilhado via link no WhatsApp. Ele foi projetado para funcionar exclusivamente em dispositivos móveis, ocupando 100% da tela do celular e proporcionando uma experiência fluida e elegante.
+
+Estrutura do Projeto
+
+index.html
+Contém a estrutura principal do convite, dividida em três páginas internas com navegação por botões.
+
+style.css
+Responsável pelo layout em tela cheia, tipografia ampliada para leitura confortável, posicionamento inferior dos botões e animações suaves de transição.
+
+script.js
+Controla:
+- Navegação entre páginas
+- Vibração leve ao trocar de página (quando suportado pelo dispositivo)
+- Tela de carregamento
+- Contagem regressiva dinâmica para 01 de março de 2026 às 9h
+
+Principais Recursos
+
+1. Layout Full Screen
+Utiliza 100dvh para ocupar completamente a altura do dispositivo.
+
+2. Tipografia Otimizada
+Tamanhos de fonte maiores para facilitar leitura em celulares.
+
+3. Transição Fluida
+Transição leve utilizando opacity e translateX, evitando animações 3D pesadas que causam travamentos em dispositivos móveis.
+
+4. Vibração Leve
+Utiliza a API navigator.vibrate quando disponível no dispositivo.
+
+5. Contagem Regressiva
+Atualização automática a cada segundo até a data do evento.
+
+6. Tela de Carregamento
+Exibe um spinner até que todos os recursos da página estejam carregados.
+
+Como Publicar no GitHub Pages
+
+1. Envie os arquivos para um repositório no GitHub.
+2. Acesse Settings do repositório.
+3. Clique em Pages.
+4. Em Source selecione:
+   Branch: main
+   Folder: /root
+5. Salve.
+
+O GitHub irá gerar um link no formato:
+
+https://seuusuario.github.io/nomedorepositorio/
+
+Esse será o link compartilhável para enviar no WhatsApp.
+
+Observações Importantes
+
+- Substitua o link do Google Maps pelo endereço real.
+- Substitua o número do WhatsApp no botão de confirmação.
+- Certifique-se de que o arquivo papertexture.jpg está na raiz do projeto.

@@ -2,41 +2,66 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convite Especial</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Convite Aniversário</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Cinzel:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
     <div class="book-container">
-        <div id="book" class="book">
-            
-            <div class="page cover active" onclick="nextPage()">
+        <div class="book">
+
+            <!-- Página 1 -->
+            <div class="page active" id="p1">
                 <div class="content">
-                    <h1 class="titulo">Um Convite Real</h1>
-                    <p>Toque para abrir o mistério...</p>
+                    <div>
+                        <h1>Você tem uma missão</h1>
+                        <p>No meu aniversário você foi convocado para algo especial.</p>
+                    </div>
+
+                    <div class="bottom-area">
+                        <button class="nav-btn" onclick="nextPage()">ABRIR</button>
+                    </div>
                 </div>
             </div>
 
-            <div class="page" onclick="nextPage()">
+            <!-- Página 2 -->
+            <div class="page" id="p2">
                 <div class="content">
-                    <h2>O Grande Dia</h2>
-                    <p>Você foi convocado para celebrar meu aniversário em uma noite mágica!</p>
-                    <p><strong>Data:</strong> 20 de Maio de 2026</p>
+                    <div>
+                        <h2>Um voluntariado</h2>
+                        <p>Minha jornada completa um novo ciclo e quero estar com você nesse dia fazendo algo especial.</p>
+                        <p><strong>01 de Março de 2026 às 9h</strong></p>
+
+                        <div id="countdown"></div>
+                    </div>
+
+                    <div class="bottom-area nav-group">
+                        <button class="nav-btn-alt" onclick="prevPage()">VOLTAR</button>
+                        <button class="nav-btn" onclick="nextPage()">PRÓXIMO</button>
+                    </div>
                 </div>
             </div>
 
-            <div class="page">
+            <!-- Página 3 -->
+            <div class="page" id="p3">
                 <div class="content">
-                    <h2>Localização</h2>
-                    <p>Siga o mapa para chegar ao reino:</p>
-                    
-                    <a href="https://maps.google.com" target="_blank" class="btn-link">📍 Ver no Google Maps</a>
-                    
-                    <a href="https://wa.me/5511999999999" target="_blank" class="btn-link confirm">✅ Confirmar Presença</a>
-                    
-                    <button class="btn-back" onclick="prevPage()">⬅ Voltar Página</button>
+                    <div>
+                        <h2>Localização</h2>
+                        <a href="https://maps.google.com" target="_blank" class="btn-link">VER NO MAPA</a>
+                        <a href="https://wa.me/5500000000000" target="_blank" class="btn-link btn-confirm">CONFIRMAR PRESENÇA</a>
+                    </div>
+
+                    <div class="bottom-area">
+                        <button class="nav-btn-alt" onclick="prevPage()">VOLTAR</button>
+                    </div>
                 </div>
             </div>
 

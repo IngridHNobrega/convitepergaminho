@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite Especial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Cinzel:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="book-container">
+        <div id="book" class="book">
+            
+            <div class="page cover active" onclick="nextPage()">
+                <div class="content">
+                    <h1 class="titulo">Um Convite Real</h1>
+                    <p>Toque para abrir o mistério...</p>
+                </div>
+            </div>
+
+            <div class="page" onclick="nextPage()">
+                <div class="content">
+                    <h2>O Grande Dia</h2>
+                    <p>Você foi convocado para celebrar meu aniversário em uma noite mágica!</p>
+                    <p><strong>Data:</strong> 20 de Maio de 2026</p>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="content">
+                    <h2>Localização</h2>
+                    <p>Siga o mapa para chegar ao reino:</p>
+                    
+                    <a href="https://maps.google.com" target="_blank" class="btn-link">📍 Ver no Google Maps</a>
+                    
+                    <a href="https://wa.me/5511999999999" target="_blank" class="btn-link confirm">✅ Confirmar Presença</a>
+                    
+                    <button class="btn-back" onclick="prevPage()">⬅ Voltar Página</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
